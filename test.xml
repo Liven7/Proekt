@@ -1,145 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pl_L>
-    <section id="401">
-        <section_left pIn="399СП">401</section_left>
-        <section_right pIn="403С" zIn="403З">401</section_right>
-    </section>
-    <section id="403">
-        <section_left pIn="401СП" zIn="401З">403</section_left>
-        <section_right pIn="405СП" zIn="405З">403</section_right>
-    </section>
-    <section id="405">
-        <section_left pIn="403СП" zIn="403З">405</section_left>
-        <section_right pIn="407СП" zIn="407З">405</section_right>
-    </section>
-    <section id="407">
-        <section_left pIn="405СП" zIn="405З">407</section_left>
-        <section_right pIn="409СП" zIn="409З">407</section_right>
-    </section>
-    <section id="409">
-        <section_left pIn="407СП" zIn="407З">409</section_left>
-        <section_right pIn="409cСП" zIn="409cЗ">409</section_right>
-    </section>
-    <section id="409c">
-        <section_left pIn="409СП" zIn="409З">409c</section_left>
-        <section_right pIn="411СП" zIn="411З">409c</section_right>
-    </section>
-    <section id="411">
-        <section_left pIn="409cСП" zIn="409cЗ">411</section_left>
-        <section_right pIn="411cСП" zIn="411cЗ">411</section_right>
-    </section>
-    <section id="411c">
-        <section_left pIn="411СП" zIn="411З">411c</section_left>
-        <section_right_bottom pIn="413cСП" zIn="413cЗ">411c</section_right_bottom>
-        <section_right_top pIn="3aСП" zIn="3aЗ">411c</section_right_top>
-    </section>
-    <section id="413c">
-        <section_left pIn="411cСП" zIn="411cЗ">413c</section_left>
-        <section_right pIn="413aСП" zIn="413aЗ">413c</section_right>
-    </section>
-    <section id="413a">
-        <section_left pIn="413cСП" zIn="413cЗ">413a</section_left>
-        <section_right pIn="415aСП">413a</section_right>
-    </section>
-    <section id="3a">
-        <section_left pIn="413aСП" zIn="413aЗ">3a</section_left>
-        <section_right pIn="3СП" zIn="3З">3a</section_right>
-    </section>
-    <section id="3">
-        <section_left pIn="3aСП" zIn="3aЗ">3</section_left>
-        <section_right pIn="3bСП" zIn="3bЗ">3</section_right>
-    </section>
-    <section id="3b">
-        <section_left pIn="3СП" zIn="3З">3b</section_left>
-        <section_right pIn="7СП" zIn="7З">3b</section_right>
-    </section>
-    <section id="7">
-        <section_left pIn="3bСП" zIn="3bЗ">7</section_left>
-        <section_right pIn="4aСП" zIn="4aЗ">7</section_right>
-    </section>
-    <section id="4a">
-        <section_left pIn="7СП" zIn="7З">4a</section_left>
-        <section_right pIn="4СП" zIn="4З">4a</section_right>
-    </section>
-    <section id="4">
-        <section_left pIn="4aСП" zIn="4aЗ">4</section_left>
-        <section_right pIn="408cСП" zIn="408cЗ">4</section_right>
-    </section>
-    <section id="408c">
-        <section_left pIn="406СП">408c</section_left>
-        <section_right pIn="408СП" zIn="408З">408c</section_right>
-    </section>
-    <section id="408">
-        <section_left pIn="408cСП" zIn="408cЗ">408</section_left>
-        <section_right pIn="410cСП" zIn="410cЗ">408</section_right>
-    </section>
-    <section id="410c">
-        <section_left pIn="408СП" zIn="408З">410c</section_left>
-        <section_right pIn="412cСП" zIn="412cЗ">410c</section_right>
-    </section>
-    <section id="412c">
-        <section_left pIn="410cСП" zIn="410cЗ">412c</section_left>
-        <section_right pIn="412СП" zIn="412З">412c</section_right>
-    </section> 
-    <section id="412">
-        <section_left pIn="412cСП" zIn="412cЗ">412</section_left>
-        <section_right pIn="414СП" zIn="414З">412</section_right>
-    </section>
-    <section id="414">
-        <section_left pIn="412СП" zIn="412З">414</section_left>
-        <section_right_top pIn="416СП" zIn="416З">414</section_right_top>
-        <section_right_bottom pIn="4aСП" zIn="4aЗ">414</section_right_bottom>
-    </section>
-    <section id="416">
-        <section_left pIn="414СП" zIn="414З">416</section_left>
-        <section_right pIn="418СП" zIn="418З">416</section_right>
-    </section>
-    <section id="418">
-        <section_left pIn="416СП" zIn="416З">418</section_left>
-        <section_right pIn="420bСП" zIn="420bЗ">418</section_right>
-    </section>
-    <section id="420b">
-        <section_left pIn="418СП" zIn="418З">420b</section_left>
-        <section_right pIn="420aСП" zIn="420aЗ">420b</section_right>
-    </section>
-    <section id="420a">
-        <section_left pIn="420bСП" zIn="420bЗ">420a</section_left>
-        <section_right pIn="420СП" zIn="420З">420a</section_right>
-    </section>
-    <section id="420">
-        <section_left pIn="420aСП" zIn="420aЗ">420</section_left>
-        <section_right pIn="422СП">420</section_right>
-    </section>
-</pl_L>
+<station>
+    <pl_L>
+        <section id="401" zIn="401з" pIn="401р" n_l="399" n_r="403" /><!--Узнать надо ли писать несуществующую секцию-->
+        <section id="403" zIn="403з" pIn="403р" n_l="401" n_r="405" />
+        <section id="405" zIn="405з" pIn="405р" n_l="403" n_r="407" />
+        <section id="407" zIn="407з" pIn="407р" n_l="405" n_r="409" />
+        <section id="409" zIn="409з" pIn="409р" n_l="407" n_r="409с" />
+        <section id="409с" zIn="409сз" pIn="409ср" n_l="409" n_r="411" />
+        <section id="411" zIn="411з" pIn="411р" n_l="409с" n_r="411с" />
+        <section id="411с" zIn="411сз" pIn="411ср" n_l="411" n_r="413с" n_t="3а" />
+        <section id="413с" zIn="413з" pIn="413р" n_l="411с" n_r="413а" />
+        <section id="413а" zIn="413з" pIn="413р" n_l="413с" n_r="415а" />
+        <section id="3а" zIn="3аз" pIn="3ар" n_l="413с" n_r="3" />
+        <section id="3" zIn="3з" pIn="3р" n_l="3а" n_r="3б" />
+        <section id="3б" zIn="3бз" pIn="3бр" n_l="3" n_r="7" />
+        <section id="7" zIn="7з" pIn="7р" n_l="3б" n_r="4а" />
+        <section id="4а" zIn="4аз" pIn="4ар" n_l="7" n_r="4" />
+        <section id="4" zIn="4з" pIn="4р" n_l="4а" n_r="408с" />
+        <section id="408с" zIn="408сз" pIn="408ср" n_l="406" n_r="408" />
+        <section id="408" zIn="408з" pIn="408р" n_l="408с" n_r="410с" />
+        <section id="410с" zIn="408з" pIn="408р" n_l="408" n_r="412с" />
+        <section id="412с" zIn="412сз" pIn="412ср" n_l="410с" n_r="412" />
+        <section id="412" zIn="412з" pIn="412р" n_l="412с" n_r="414" />
+        <section id="414" zIn="414з" pIn="414р" n_l="412" n_r="416" n_t="4а"/>
+        <section id="416" zIn="416з" pIn="416р" n_l="414" n_r="418" />
+        <section id="418" zIn="418з" pIn="418р" n_l="416" n_r="420б" />
+        <section id="420б" zIn="420бз" pIn="420бр" n_l="418" n_r="420а" />
+        <section id="420а" zIn="420аз" pIn="420ар" n_l="420б" n_r="420" />
+        <section id="420" zIn="420з" pIn="420р" n_l="420а" n_r="422" />
+    </pl_L>
 
-<arrows>
-    <arrow name="1">
-        <arrow_position PP="+1" MP="-1" Fixation="+">1</arrow_position>
-        <Control_1 PP="+3/6" MP="-3/6" Fixation="+">1</Control_1>
-        <Control_2 PP="+5/4" MP="-5/4" Fixation="+">1</Control_2>
-    </arrow>
-    <arrow name="2">
-        <arrow_position PP="+2" MP="-2" Fixation="+">2</arrow_position>
-        <Control_1 PP="+3/6" MP="-3/6" Fixation="+">2</Control_1>
-        <Control_2 PP="+5/4" MP="-5/4" Fixation="+">2</Control_2>
-    </arrow>
-    <arrow name="4/5">
-        <arrow_position PP="+4/5" MP="-4/5" Fixation="+">4/5</arrow_position>
-        <Control_1 PP="+3/6" MP="-3/6" Fixation="+">4/5</Control_1>
-        <Control_2 PP="+2" MP="-2" Fixation="+">4/5</Control_2>
-        <Control_3 PP="+1" MP="-1" Fixation="+">4/5</Control_3>
-    </arrow>
-    <arrow name="6/3">
-        <arrow_position PP="+6/3" MP="-6/3" Fixation="+">6/3</arrow_position>
-        <Control_1 PP="+4/5" MP="-4/5" Fixation="+">6/3</Control_1>
-        <Control_2 PP="+2" MP="-2" Fixation="+">6/3</Control_2>
-        <Control_3 PP="+1" MP="-1" Fixation="+">6/3</Control_3>
-    </arrow>
-</arrows>
+    <!--Стрелки не трогали 
 
-<light>
-    <traffic_light name="LN 407">
-        <traffic_left pIn="1СП" zIn="1З">LN 407</traffic_left>
-        <traffic_right pIn="1СП" zIn="1З">LN 407</traffic_right>
-    </traffic_light>
-</light>
+    <arrows>
+        <arrow name="1">
+            <arrow_position PP="+1" MP="-1" Fixation="+">1</arrow_position>
+            <Control_1 PP="+3/6" MP="-3/6" Fixation="+">1</Control_1>
+            <Control_2 PP="+5/4" MP="-5/4" Fixation="+">1</Control_2>
+        </arrow>
+        <arrow name="2">
+            <arrow_position PP="+2" MP="-2" Fixation="+">2</arrow_position>
+            <Control_1 PP="+3/6" MP="-3/6" Fixation="+">2</Control_1>
+            <Control_2 PP="+5/4" MP="-5/4" Fixation="+">2</Control_2>
+        </arrow>
+        <arrow name="4/5">
+            <arrow_position PP="+4/5" MP="-4/5" Fixation="+">4/5</arrow_position>
+            <Control_1 PP="+3/6" MP="-3/6" Fixation="+">4/5</Control_1>
+            <Control_2 PP="+2" MP="-2" Fixation="+">4/5</Control_2>
+            <Control_3 PP="+1" MP="-1" Fixation="+">4/5</Control_3>
+        </arrow>
+        <arrow name="6/3">
+            <arrow_position PP="+6/3" MP="-6/3" Fixation="+">6/3</arrow_position>
+            <Control_1 PP="+4/5" MP="-4/5" Fixation="+">6/3</Control_1>
+            <Control_2 PP="+2" MP="-2" Fixation="+">6/3</Control_2>
+            <Control_3 PP="+1" MP="-1" Fixation="+">6/3</Control_3>
+        </arrow>
+    </arrows>
+
+    <light>
+        <traffic_light name="LN 407">
+            <traffic_left pIn="1СП" zIn="1З">LN 407</traffic_left>
+            <traffic_right pIn="1СП" zIn="1З">LN 407</traffic_right>
+        </traffic_light>
+    </light>
+    -->
+</station>

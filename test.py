@@ -68,6 +68,7 @@ for row in matrix:
 '''
 
 
+''' 
 
 import random
 
@@ -75,11 +76,11 @@ def generate_and_edit_random_numbers(count):
     random_numbers = [random.randint(0, 1) for _ in range(count)]
     print("Сгенерированные числа:", random_numbers)
     
-    ''' Нужно ли нам выводить промежуточное значение в массиве?
+    Нужно ли нам выводить промежуточное значение в массиве?
     print("\nНомера чисел для редактирования (от 1 до {}):".format(count))
     for i in range(len(random_numbers)):
         print("{}: {}".format(i + 1, random_numbers[i]))
-    '''
+    
     
     while True:
         try:
@@ -149,3 +150,117 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+'''
+
+import xml.etree.ElementTree as ET
+
+
+class Section:
+    def __init__(self, elem: ET.Element):
+        a = elem.attrib
+        self.id = a.get("id")
+        self.pIn = a.get("pIn")
+        self.zIn = a.get("zIn")
+
+    def __repr__(self):
+        return f"<Section id={self.id!r} pIn={self.pIn!r} zIn={self.zIn!r}>"
+
+
+class Way:
+    def __init__(self, elem: ET.Element):
+        a = elem.attrib
+        self.id = a.get("id")
+        self.pIn = a.get("pIn")
+        self.zIn = a.get("zIn")
+
+    def __repr__(self):
+        return f"<Way id={self.id!r} pIn={self.pIn!r} zIn={self.zIn!r}>"
+
+
+class Switch:
+    def __init__(self, elem: ET.Element):
+        a = elem.attrib
+        self.id = a.get("id")
+        self.pkIn = a.get("pkIn")
+        self.mkIn = a.get("mkIn")
+
+    def __repr__(self):
+        return f"<Switch id={self.id!r} pkIn={self.pkIn!r} mkIn={self.mkIn!r}>"
+
+
+class Signal:
+    def __init__(self, elem: ET.Element):
+        a = elem.attrib
+        self.id = a.get("id")
+        self.redIn = a.get("redIn")
+        self.greenIn = a.get("greenIn")
+        self.yellowIn = a.get("yellowIn")
+        self.blueIn = a.get("blueIn")
+
+    def __repr__(self):
+        return (
+            f"<Signal id={self.id!r} r={self.redIn!r} g={self.greenIn!r} "
+            f"y={self.yellowIn!r} b={self.blueIn!r}>"
+        )
+
+
+class ObjectFactory:
+    def __init__(self):
+        self.sections = []
+        self.ways = []
+        self.switches = []
+        self.signals = []
+        self._all = []
+
+        self._registry = {
+            "section": (Section, self.sections),
+            "way": (Way, self.ways),
+            "switch": (Switch, self.switches),
+            "signal": (Signal, self.signals),
+        }
+
+    @property
+    def all_objects(self):
+        return self._all
+
+    def load_from_file(self, filename: str):
+        tree = ET.parse(filename)
+        root = tree.getroot()
+        self._create_objects(root)
+
+    def load_from_string(self, xml_text: str):
+        root = ET.fromstring(xml_text)
+        self._create_objects(root)
+
+    def _create_objects(self, root: ET.Element):
+        for elem in root.iter():
+            reg = self._registry.get(elem.tag)
+            if reg is None:
+                continue
+            cls, lst = reg
+            obj = cls(elem)
+            lst.append(obj)
+            self._all.append(obj)
+
+
+if __name__ == "__main__":
+    xml_example = """
+    <root>
+        <section id="1" pIn="1П" zIn="1з" />
+        <way id="411" pIn="411П" zIn="411з" />
+        <switch id="1" pkIn="1ПК" mkIn="1МК" />
+        <signal id="411пЛ" redIn="411КО" greenIn="411РО" yellowIn="411ЖО" blueIn="411БО" />
+    </root>
+    """
+
+    factory = ObjectFactory()
+    factory.load_from_string(xml_example)
+
+    print("Sections:", factory.sections)
+    print("Ways:", factory.ways)
+    print("Switches:", factory.switches)
+    print("Signals:", factory.signals)
+    print("All:", factory.all_objects)
+
