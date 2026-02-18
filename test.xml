@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <station>
-    <pl_L>
+    <sections>
         <section id="401" zIn="401з" pIn="401р" n_l="399" n_r="403" /><!--Узнать надо ли писать несуществующую секцию-->
         <section id="403" zIn="403з" pIn="403р" n_l="401" n_r="405" />
         <section id="405" zIn="405з" pIn="405р" n_l="403" n_r="407" />
@@ -28,40 +28,5 @@
         <section id="420б" zIn="420бз" pIn="420бр" n_l="418" n_r="420а" />
         <section id="420а" zIn="420аз" pIn="420ар" n_l="420б" n_r="420" />
         <section id="420" zIn="420з" pIn="420р" n_l="420а" n_r="422" />
-    </pl_L>
-
-    <!--Стрелки не трогали 
-
-    <arrows>
-        <arrow name="1">
-            <arrow_position PP="+1" MP="-1" Fixation="+">1</arrow_position>
-            <Control_1 PP="+3/6" MP="-3/6" Fixation="+">1</Control_1>
-            <Control_2 PP="+5/4" MP="-5/4" Fixation="+">1</Control_2>
-        </arrow>
-        <arrow name="2">
-            <arrow_position PP="+2" MP="-2" Fixation="+">2</arrow_position>
-            <Control_1 PP="+3/6" MP="-3/6" Fixation="+">2</Control_1>
-            <Control_2 PP="+5/4" MP="-5/4" Fixation="+">2</Control_2>
-        </arrow>
-        <arrow name="4/5">
-            <arrow_position PP="+4/5" MP="-4/5" Fixation="+">4/5</arrow_position>
-            <Control_1 PP="+3/6" MP="-3/6" Fixation="+">4/5</Control_1>
-            <Control_2 PP="+2" MP="-2" Fixation="+">4/5</Control_2>
-            <Control_3 PP="+1" MP="-1" Fixation="+">4/5</Control_3>
-        </arrow>
-        <arrow name="6/3">
-            <arrow_position PP="+6/3" MP="-6/3" Fixation="+">6/3</arrow_position>
-            <Control_1 PP="+4/5" MP="-4/5" Fixation="+">6/3</Control_1>
-            <Control_2 PP="+2" MP="-2" Fixation="+">6/3</Control_2>
-            <Control_3 PP="+1" MP="-1" Fixation="+">6/3</Control_3>
-        </arrow>
-    </arrows>
-
-    <light>
-        <traffic_light name="LN 407">
-            <traffic_left pIn="1СП" zIn="1З">LN 407</traffic_left>
-            <traffic_right pIn="1СП" zIn="1З">LN 407</traffic_right>
-        </traffic_light>
-    </light>
-    -->
+    </sections>
 </station>
